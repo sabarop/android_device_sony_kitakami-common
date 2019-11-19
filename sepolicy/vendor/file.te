@@ -23,3 +23,6 @@ type sysfs_msm_subsys, sysfs_type, fs_type;
 
 # Camera
 type sysfs_camera, sysfs_type, fs_type;
+
+# LTALabel
+type lta_label, fs_type;

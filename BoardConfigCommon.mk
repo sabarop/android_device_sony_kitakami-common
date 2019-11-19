@@ -168,6 +168,7 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 BOARD_ROOT_EXTRA_FOLDERS := \
     firmware \
     persist \
+    lta-label \
     rca
 
 # RIL
