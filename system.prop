@@ -61,6 +61,9 @@ dalvik.vm.image-dex2oat-threads=4
 PRODUCT_PROPERTY_OVERRIDES += \
     lockscreen.rot_override=true
 
+# Dalvik dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
 # lmkd options
 ro.lmk.low=1001
 ro.lmk.medium=800
