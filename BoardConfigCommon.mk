@@ -89,15 +89,14 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 
 # Camera
 TARGET_USES_MEDIA_EXTENSIONS := true
+USE_DEVICE_SPECIFIC_CAMERA := true
+TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
-    /system/bin/cameraserver=25 \
-    /system/bin/mediaserver=25 \
     /system/bin/secd=25 \
     /system/bin/tad_static=25 \
     /system/bin/loc_launcher=25 \
-    /system/bin/mm-qcamera-daemon=25 \
-    /system/bin/sensors.qcom=25
+    /system/bin/mm-qcamera-daemon=25
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
@@ -147,6 +146,7 @@ TARGET_PROVIDES_LIBLIGHT := true
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 
 # Init
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
@@ -199,6 +199,9 @@ TARGET_LD_SHIM_LIBS := \
 # SELinux
 include device/qcom/sepolicy-legacy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+
+# Sensors
+USE_SENSOR_MULTI_HAL := true
 
 # WiFi
 BOARD_WLAN_DEVICE           := bcmdhd
