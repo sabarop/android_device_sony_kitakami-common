@@ -58,6 +58,10 @@ dalvik.vm.boot-dex2oat-threads=4
 dalvik.vm.dex2oat-threads=2
 dalvik.vm.image-dex2oat-threads=4
 
+# Lockscreen rotation
+PRODUCT_PROPERTY_OVERRIDES += \
+    lockscreen.rot_override=true
+
 # lmkd options
 ro.lmk.low=1001
 ro.lmk.medium=800
