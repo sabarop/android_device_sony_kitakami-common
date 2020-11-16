@@ -32,10 +32,6 @@
 /data/etc                                                  u:object_r:ta_data_file:s0
 /data/etc(/.*)                                             u:object_r:ta_data_file:s0
 
-# Fingerprint sensor SPI device
-/data/fpc(/.*)?                                            u:object_r:fpc_data_file:s0
-/data/fpcd(/.*)?                                           u:object_r:fpc_data_file:s0
-
 # TA
 /dev/socket/tad                                            u:object_r:tad_socket:s0
 /dev/socket/secd_credmgr_sock                              u:object_r:secd_socket:s0
