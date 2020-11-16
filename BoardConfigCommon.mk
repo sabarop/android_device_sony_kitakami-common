@@ -93,7 +93,6 @@ TARGET_USES_MEDIA_EXTENSIONS := true
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
     /system/bin/cameraserver=25 \
     /system/bin/mediaserver=25 \
-    /system/bin/iddd=25 \
     /system/bin/secd=25 \
     /system/bin/tad_static=25 \
     /system/bin/loc_launcher=25 \
@@ -158,7 +157,6 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 BOARD_ROOT_EXTRA_FOLDERS := \
     firmware \
     persist \
-    idd \
     rca
 
 # RIL

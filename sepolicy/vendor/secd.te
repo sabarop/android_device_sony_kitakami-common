@@ -15,7 +15,6 @@ allow secd diag_data_file:dir search;
 allow secd diag_data_file:sock_file write;
 allow secd firmware_file:dir search;
 allow secd firmware_file:file { getattr open read };
-allow secd iddd:unix_dgram_socket sendto;
 allow secd ion_device:chr_file { ioctl open read };
 allow secd socket_device:sock_file write;
 allow secd tee_device:chr_file { ioctl open read write };
