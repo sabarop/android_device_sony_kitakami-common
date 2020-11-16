@@ -70,4 +70,3 @@
 /system/vendor/bin/timekeep                                u:object_r:timekeep_exec:s0
 
 /system/vendor/(lib|lib64)/libril-wrapper\.so              u:object_r:hal_ril_wrapper_exec:s0
-

@@ -3,4 +3,6 @@ allow kernel tmpfs:file create_file_perms;
 allow kernel tmpfs:dir create_dir_perms;
 allow kernel block_device:blk_file rw_file_perms;
 allow kernel touchfusion_exec:file relabelto;
-allow kernel self:socket create;
+allow kernel kernel:socket create;
+allow kernel kernel:capability net_admin;
+allow kernel kmsg_device:chr_file write;
