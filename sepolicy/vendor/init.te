@@ -36,7 +36,6 @@ allow init hal_drm_hwservice:hwservice_manager add;
 allow init hal_light_hwservice:hwservice_manager add;
 allow init hidl_base_hwservice:hwservice_manager add;
 allow init hwservicemanager:binder { call transfer };
-allow init iddd:unix_dgram_socket sendto;
 allow init ion_device:chr_file { open read };
 allow init proc:file write;
 allow init sysfs:file { open read setattr write };

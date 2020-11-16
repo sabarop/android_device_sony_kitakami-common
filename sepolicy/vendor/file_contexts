@@ -39,8 +39,6 @@
 /dev/socket/secd_ebl_sock                                  u:object_r:secd_socket:s0
 /data/credmgr                                              u:object_r:secd_data_file:s0
 /data/credmgr(/.*)                                         u:object_r:secd_data_file:s0
-/idd                                                       u:object_r:diag_data_file:s0
-/idd(/.*)?                                                 u:object_r:diag_data_file:s0
 /rca(/.*)?                                                 u:object_r:firmware_file:s0
 
 # TimeKeep
@@ -48,7 +46,6 @@
 
 # Misc
 /system/bin/adsprpcd                                       u:object_r:adsprpcd_exec:s0
-/system/bin/iddd                                           u:object_r:iddd_exec:s0
 /system/bin/init\.qcom\.power\.sh                          u:object_r:init-power-sh_exec:s0
 /system/bin/irsc_util                                      u:object_r:irsc_util_exec:s0
 /system/bin/loc_launcher                                   u:object_r:loc_launcher_exec:s0
