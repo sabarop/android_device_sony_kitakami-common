@@ -17,7 +17,7 @@
 #define LOG_NDEBUG 0
 
 #define LOG_TAG "Camera3Wrapper"
-#include <cutils/log.h>
+#include <log/log.h>
 
 #include "CameraWrapper.h"
 #include "Camera3Wrapper.h"

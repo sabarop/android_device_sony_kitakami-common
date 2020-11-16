@@ -22,7 +22,7 @@ LOCAL_SRC_FILES := \
     Camera2Wrapper.cpp \
     Camera3Wrapper.cpp
 
-LOCAL_STATIC_LIBRARIES := libbase libarect
+LOCAL_STATIC_LIBRARIES := libarect
 LOCAL_SHARED_LIBRARIES := \
     libhardware \
     liblog \
@@ -32,8 +32,7 @@ LOCAL_SHARED_LIBRARIES := \
     libsensor \
     libutils \
     libcutils \
-    android.hidl.token@1.0-utils \
-    android.hardware.graphics.bufferqueue@1.0
+    android.hidl.token@1.0-utils
 
 LOCAL_C_INCLUDES := \
     framework/native/include \
@@ -44,7 +43,7 @@ LOCAL_32_BIT_ONLY := true
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_VENDOR_MODULE := true
 
-LOCAL_MODULE := camera.$(TARGET_BOARD_PLATFORM)
+LOCAL_MODULE := camera.qcom
 LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_SHARED_LIBRARY)
