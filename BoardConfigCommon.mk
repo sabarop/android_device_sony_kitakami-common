@@ -189,7 +189,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
-     /system/vendor/lib/hw/camera.vendor.qcom.so|/system/vendor/lib/camera.qcom_shim.so \
+     /system/vendor/lib/hw/camera.vendor.qcom.so|/system/vendor/lib/libshim_camera.so \
      /system/lib64/libsys-utils.so|libsensor.so \
      /system/lib/libcammw.so|libsensor.so \
      /system/vendor/lib/libizat_core.so|/system/vendor/lib/libshim_gps.so \

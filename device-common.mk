@@ -283,7 +283,7 @@ PRODUCT_PACKAGES += \
 
 # Shim libs
 PRODUCT_PACKAGES += \
-   camera.qcom_shim
+   libshim_camera
 
 # Thermal
 PRODUCT_PACKAGES += \
