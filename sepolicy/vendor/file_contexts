@@ -19,6 +19,9 @@
 /sys/devices/platform/bcmdhd_wlan/macaddr                  u:object_r:sysfs_addrsetup:s0
 /sys/devices(/soc\.0)?/bcmdhd_wlan.83/macaddr              u:object_r:sysfs_addrsetup:s0
 
+# Dumpstate HAL
+/system/vendor/bin/hw/android\.hardware\.dumpstate@1.0-service\.z4    u:object_r:hal_dumpstate_default_exec:s0
+
 # Camera
 /sys/devices(/soc\.0)?/pmi8994-flash-27(/.*)?              u:object_r:sysfs_camera_torch:s0
 

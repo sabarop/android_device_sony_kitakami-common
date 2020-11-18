@@ -155,6 +155,10 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     memtrack.msm8994
 
+# Dumpstate
+PRODUCT_PACKAGES += \
+    android.hardware.dumpstate@1.0-service.z4
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl
