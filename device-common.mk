@@ -321,7 +321,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service
 
 PRODUCT_PACKAGES += \
-    p2p_supplicant.conf \
     hostapd \
     libwifi-hal-bcm \
     libwpa_client \
