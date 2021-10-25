@@ -58,12 +58,12 @@ dalvik.vm.boot-dex2oat-threads=4
 dalvik.vm.dex2oat-threads=2
 dalvik.vm.image-dex2oat-threads=4
 
+# Dalvik dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
 # Lockscreen rotation
 PRODUCT_PROPERTY_OVERRIDES += \
     lockscreen.rot_override=true
-
-# Dalvik dex2oat
-dalvik.vm.dex2oat64.enabled=true
 
 # lmkd options
 ro.lmk.low=1001
@@ -126,10 +126,6 @@ ro.sony.sensors.dpc=false
 ro.sony.sensors.pug=false
 ro.qc.sdk.sensors.gestures=true
 
-# Traced
-persist.traced.enable=0
-
 # Wifi
 wifi.interface=wlan0
 wifi.direct.interface=p2p-dev-wlan0
-persist.data.iwlan.enable=true
