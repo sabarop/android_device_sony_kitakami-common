@@ -20,8 +20,7 @@ $(call inherit-product, vendor/sony/kitakami-common/kitakami-common-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Radio config
 ifneq ($(BOARD_HAVE_RADIO),false)
@@ -348,10 +347,6 @@ PRODUCT_PACKAGES += \
     timekeep \
     TimeKeep
 
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
@@ -374,4 +369,4 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
    macaddrsetup
 
-$(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
+# $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
