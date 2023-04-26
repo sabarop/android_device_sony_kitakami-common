@@ -18,6 +18,9 @@
 # Get non-open-source common files
 $(call inherit-product, vendor/sony/kitakami-common/kitakami-common-vendor.mk)
 
+# TWRP
+$(call inherit-product, device/sony/kitakami-common/twrp.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
